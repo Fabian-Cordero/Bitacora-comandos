@@ -1,130 +1,209 @@
 # Bitacora-comandos
-1. ip addr / interfaces de red que tiene la maquina
 
-ping 8.8.8.8 /  muestra los paquetes perdidos y los recibidos
+ip addr / Ver datos de la red
 
-sudo / es dar permisos de administrador para descargar o inyectar codigo
+ping 8.8.8.8 /  Hacer ping para ver latencia de red
 
-ejemplo: sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo /  dar permisos de administrador
 
-apt  es para descargar paquetes de cualquier cosa
+sudo apt update / actualiza todos los repositorios
 
-install  instala los paquetes
+sudo apt upgrade / instalar las actualizaciones 
 
-cd  cambiar de directorio
+sudo apt install neofetch / Instala programa que permite ver informacion de hardware y software
 
-ls  mostrar lista
+apt / es para descargar paquetes
 
-dpkg  es para instalar paquetes mediante de la terminal
+dpkg / sirve para instalar paquetes en terminal
 
-ejemplo: dpkg -i google-chrome-stable_current_amd64.deb
+cd  / moverse a un directorio
 
-i- ---> es para instalar el paquete
+install / instala los paquetes
 
-Se puede descargar mas paquetes con un espacio.
+ls  muestra lista de archivos
 
-sudo apt update ---> para actualizar todos los repositorios que hay
+exit / salir
 
-sudo apt upgrade ---> instalar todas las actualizaciones 
+pwd / para imprime direcorio de trabajo
 
-pwd ---> para imprimir o saber de donde esta uno
+man / muestra el manual de un programa
 
-sudo apt install cmatrix
+whoami / muestra el usuario
 
-sudo apt install neofetch --->
+sudo su / usuario root
+su root / usuario root
 
-whoami --> usuario de la maquina
+cat / concatenar archivos
 
-man --> mostrar el manual de un programa
+cat /etc/passwd / ver los usuarios y sus datos
 
-sudo su --> ir en forma root o usuario root
+useradd / crea cuentas de usuario
 
-su root --> ir en forma root o usuario root
+free -h / leer memoria disponible
 
-exit --> para salir de 
+df -h / Ver detalles de directorios
 
-sudo useradd [user] -m
+du -h archivo.png / ver tamaño de archivo
 
-nano --> editor de texto
+stat archivo.png / informacion sobre archivo
 
-cat --> leer datos de archivos y mostrar su contenido.
+file archivo.png / ver tipo de archivo
 
-cat /var/log/syslog
+nano / editor de texto
+vim / editor de texto
 
-tail -n 10 /var/log/syslog
+clear / limpiar terminal
 
-head -n 10 /var/log/syslog
+apt search / busca posibles comandos
 
-cat /var/log/syslog | more
+grep / buscar archivo
+find / buscar archivo
 
-grep -r "ubuntu" /var/log/syslog | more --> es para buscar/encontrar un archivo especifico o un nombre en especifico
+chmod 777 archivo.png / dar permisos
 
-history --> ver el historial
+kill -9 $PID / Matar procesos 
 
-sudo snap install spotify --> instalar programa en la terminal
+touch / Crea archivos
 
-sudo apachectl start
+echo / imprimir
 
-free -h --> cantidad de memoria y te dice la memoria swap que tiene el sistema
+chmod +x script.sh / permisos para ejecutar scripts
 
-swapon --> donde esta el archivo de swap
+sudo passwd [usuario] / Establecer contraseñas 
 
-cat/proc/sys/vm/swappiness --> indica el swappiness de la computadora
+cat more less / muestra contenido de archivo
 
-df -h --> sirve para ver todos los discos que tiene conectado en el disco.
+history / ver el historial
 
-sudo mount --> sirve para montar datos
+sudo snap install [programa] / instalar programa 
 
-# Comando 1
-  for file in /proc/*/status ; do awk '/VmSwap|Name/{printf $2 " " $3}END{ print ""}' $file; done | sort -k 2 -n -r | less
+sudo apachectl start / inicia apache
 
-# Comando 2
-  free -h
+swapon / muestra donde esta el archivo de swap
 
-# Comando 3
-  swapon
+cat/proc/sys/vm/swappiness / indica swappiness en la computadora
 
-# Comando 4 Swampiness
-  cat /proc/sys/vm/swappiness
+df -h / muestra los discos duros conectados.
 
-# Montar un RAM Disk
+sudo mount / montar datos dispositivos
 
-  sudo mkdir /mnt/ram_disk
+sudo mkdir /mnt/ram_disk / montar disco RAM
+sudo mount -t tmpfs -o size=1024m new_ram_disk /mnt/ram_disk / montar disco RAM
   
-  sudo mount -t tmpfs -o size=1024m new_ram_disk /mnt/ram_disk
-  
-chmod ---> Cambia los permisos de las carpetas
+chmod / Cambia los permisos de las carpetas
 
-chmod + ---> lee, escribe y ejecuta
+chmod + / lee, escribe y ejecuta
 
-chmod -x --> quitar los permiso de ejecucción
+chmod -x / quitar los permiso de ejecucción
 
-ls -l ---> muestra la lista de los permiso de los archivos
+ls -l / muestra la lista de los permiso de los archivos
 
-du -h ---> Tamaño del arhivo
+du -h /  Tamaño del arhivo
 
-stat ---> Fecha de creacion
+stat / Fecha de creacion
 
-touch ---> actualiza la hora de la fecha de modificacion
+touch / actualiza la hora de la fecha de modificacion
 
-chwon ---> Tomar posesion de un archivo
+chwon / Tomar posesion de un archivo
 
-file ---> muestra el formato de un archivo
+file / muestra el formato de un archivo
 
-df -h ---> mostrar los false system del sistema
+Gparted / Admnistrar las partes del disco duro del sistema
 
-mount ---> es para montar ciertos dispositivos
+ps -aux / Para ver todos los Ids de los programas o los procesos
 
-Gparted ---> Admnistrar las partes del disco duro del sistema
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - / agregar la clave GPG oficial de Docker
 
-gnome-disk-utility ---> 
+sudo add-apt-repository "deb [arch=amd64]https://download.docker.com/linux/ubuntu bionic stable" / agregar el repositorio oficial de Docker
 
-kill-9 $PID --- Matar un proceso.
+sudo apt-get install docker-ce docker-ce-cli containerd.io / instalar docker
 
-ps -aux ---> Para ver todos los Ids de los programas o los procesos
+sudo usermod -aG docker ${USER} / usar Docker sin sudo
 
-greg ---> Mostrar localizacion de los procesos
+sudo docker run hello-world / validar funcionamiento docker
 
-ejemplo ps -aux | greg firefox
+sudo systemctl start docker  /  iniciar el Daemon
+sudo systemctl enable docker / iniciar el Daemon
 
-pwd ---> Directorio actuar donde esta uno
+docker search ubuntu / buscar imagenes
+
+sudo docker images / ver imagenes instaladas
+
+docker stop container-id / detener un contenedor
+
+docker start container-id / iniciar contenedor
+
+ sudo docker login -u USUARIODOCKERHUB / iniciar sesión en la terminal con el usuario de docker hub
+ 
+ sudo docker push docker-registry-username/docker-image-name / hacer push a la cuenta de DockerHub
+ 
+docker rmi Image Image / eliminar imagen
+
+docker rm ID ID / eliminar contenedores
+
+docker run --rm image_name / eliminar contenedores despues de cerrados
+
+sudo docker rm $(sudo docker ps -a -f status=exited -q) /  Eliminar todos los contenedores con estado “Exited (0)”
+
+sudo docker info / ver datos de docker 
+
+sudo docker images / ver imagenes descargadas 
+
+sudo docker pull ubuntu:latest / descargar version de ubuntu mas actual
+
+docker run [images name] / para correr imagenes
+
+-a docker ps docker ps -a / ver los contenedores que esten UP, incluso los que ya se terminaron de ejecutar 
+
+docker run -d (contenedor) / correr comandos de fondo
+
+ run --name (nombre) (contenedor) / asignar nombre a contenedor docker
+
+zenmap / Ver version de GUI de nmapv
+
+mv / se utiliza para mover archivos
+
+rm / elimina archivos 
+
+rm -R: / elimina archivos de forma recursiva
+
+cp / copia archivos 
+
+scp / transfiere archivos
+
+curl / verifica conectividad a las url
+
+git clone / clona un repositorio
+
+wget / descarga archivos de la web
+
+head / muestra el principio del archivo txt
+
+tail / muestra el final de un archivo txt
+
+less / ver el contenido de un archivo, permite desplazar hacia adelante y atras
+
+more / ver el contenido de un archivo, solo permite desplazar hacia adelante
+
+nmap / determina los tipos de servicios y hosts que se ejecutan en la red
+
+nslookup / consulta de forma manual los servidores de nombres para resolver un nombre de host dado
+
+netstat /  muestran el estado de la red y estadísticas de protocolos como TCP, SCTP y UDP
+
+shutdown now / apaga inmediatamente
+
+reboot / reinicia el sistema
+
+tar / comprime y descomprime archivos
+
+dd / copia y convertierte datos de archivos a bajo nivel
+
+ffmpeg / extrae la pista de audio de cualquier archivo de video y lo convierte en otro formato
+
+fdupes / escanea directorios en busca de ficheros duplicados, con opciones para listarlos y borrarlos
+
+
+
+
+
