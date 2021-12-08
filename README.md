@@ -16,199 +16,199 @@
 ||
 |apt | Descargar paquetes|
 ||
-|dpkg | sirve para instalar paquetes en terminal|
+|dpkg | Sirve para instalar paquetes en terminal|
 ||
-|cd  | moverse a un directorio|
+|cd  | Moverse a un directorio|
 ||
-|install | instala los paquetes|
+|install | Instala los paquetes|
 ||
-|ls  |muestra lista de archivos|
+|ls  | Muestra lista de archivos|
 ||
-|exit | salir
+|exit | Salir
 ||
-|pwd | para imprime direcorio de trabajo|
+|pwd | Imprime direcorio de trabajo|
 ||
-|man | muestra el manual de un programa|
+|man | Muestra el manual de un programa|
 ||
-|whoami | muestra el usuario|
+|whoami | Muestra el usuario|
 ||
-|sudo su | usuario root|
+|sudo su | Usuario root|
 ||
-|su root | usuario root|
+|su root | Usuario root|
 ||
-|cat | concatenar archivos|
+|cat | Concatenar archivos|
 ||
-|cat /etc/passwd | ver los usuarios y sus datos|
+|cat /etc/passwd | Ver los usuarios y sus datos|
 ||
-|useradd | crea cuentas de usuario|
+|useradd | Crea cuentas de usuario|
 ||
-|free -h | leer memoria disponible|
+|free -h | Leer memoria disponible|
 ||
 |df -h | Ver detalles de directorios|
 ||
-|du -h archivo.png | ver tamaño de archivo|
+|du -h archivo.png | Ver tamaño de archivo|
 ||
-|stat archivo.png | informacion sobre archivo|
+|stat archivo.png | Informacion sobre archivo|
 ||
-|file archivo.png | ver tipo de archivo|
+|file archivo.png | Ver tipo de archivo|
 ||
-|nano | editor de texto|
+|nano | Editor de texto|
 ||
-|vim | editor de texto|
+|vim | Editor de texto|
 ||
-|clear | limpiar terminal|
+|clear | Limpiar terminal|
 ||
-|apt search | busca posibles comandos|
+|apt search | Busca posibles comandos|
 ||
-|grep | buscar archivo|
+|grep | Buscar archivo|
 ||
-|find | buscar archivo|
+|find | Buscar archivo|
 ||
-|chmod 777 archivo.png | dar permisos|
+|chmod 777 archivo.png | Dar permisos|
 ||
 |kill -9 $PID | Matar procesos |
 ||
 |touch | Crea archivos|
 ||
-|echo | imprimir|
+|echo | Imprimir|
 ||
-|chmod +x script.sh | permisos para ejecutar scripts|
+|chmod +x script.sh | Permisos para ejecutar scripts|
 ||
 |sudo passwd [usuario] | Establecer contraseñas|
 ||
-|cat more less | muestra contenido de archivo|
+|cat more less | Muestra contenido de archivo|
 ||
-|history | ver el historial|
+|history | Ver el historial|
 ||
-|sudo snap install [programa] | instalar programa| 
+|sudo snap install [programa] | Instalar programa| 
 ||
-|sudo apachectl start | inicia apache|
+|sudo apachectl start | Inicia apache|
 ||
-|swapon | muestra donde esta el archivo de swap|
+|swapon | Muestra donde esta el archivo de swap|
 ||
-|cat/proc/sys/vm/swappiness | indica swappiness en la computadora|
+|cat/proc/sys/vm/swappiness | Indica swappiness en la computadora|
 ||
-|df -h / muestra los discos duros conectados|
+|df -h | Muestra los discos duros conectados|
 ||
-|sudo mount | montar datos dispositivos|
+|sudo mount | Montar datos dispositivos|
 ||
-|sudo mkdir /mnt/ram_disk | montar disco RAM|
+|sudo mkdir /mnt/ram_disk | Montar disco RAM|
 ||
-|sudo mount -t tmpfs -o size=1024m new_ram_disk /mnt/ram_disk |montar disco RAM|
+|sudo mount -t tmpfs -o size=1024m new_ram_disk /mnt/ram_disk |Montar disco RAM|
 ||
 |chmod | Cambia los permisos de las carpetas|
 ||
-|chmod + | lee, escribe y ejecuta|
+|chmod + | Lee, escribe y ejecuta|
 ||
-|chmod -x | quitar los permiso de ejecucción|
+|chmod -x | Quitar los permiso de ejecucción|
 ||
-|ls -l | muestra la lista de los permiso de los archivos|
+|ls -l | Muestra la lista de los permiso de los archivos|
 ||
 |du -h | Tamaño del arhivo|
 ||
 |stat | Fecha de creacion|
 ||
-|touch | actualiza la hora de la fecha de modificacion|
+|touch | Actualiza la hora de la fecha de modificacion|
 ||
 |chwon | Tomar posesion de un archivo|
 ||
-|file | muestra el formato de un archivo|
+|file | Muestra el formato de un archivo|
 ||
 |Gparted | Admnistrar las partes del disco duro del sistema|
 ||
 |ps -aux | Para ver todos los Ids de los programas o los procesos|
 ||
-|curl -fsSL https://download.docker.com/linux/debian/gpg l sudo apt-key add - | agregar la clave GPG oficial de Docker|
+|curl -fsSL https://download.docker.com/linux/debian/gpg l sudo apt-key add - | Agregar la clave GPG oficial de Docker|
 ||
-|sudo add-apt-repository "deb [arch=amd64]https://download.docker.com/linux/ubuntu bionic stable" / agregar el repositorio oficial de Docker|
+|sudo add-apt-repository "deb [arch=amd64]https://download.docker.com/linux/ubuntu bionic stable" | Agregar el repositorio oficial de Docker|
 ||
-|sudo apt-get install docker-ce docker-ce-cli containerd.io |instalar docker|
+|sudo apt-get install docker-ce docker-ce-cli containerd.io | Instalar docker|
 ||
-|sudo usermod -aG docker ${USER} | usar Docker sin sudo|
+|sudo usermod -aG docker ${USER} | Usar Docker sin sudo|
 ||
-|sudo docker run hello-world | validar funcionamiento docker|
+|sudo docker run hello-world | Validar funcionamiento docker|
 ||
-|sudo systemctl start docker  |  iniciar el Daemon|
+|sudo systemctl start docker  |  Iniciar el Daemon|
 ||
-|sudo systemctl enable docker | iniciar el Daemon|
+|sudo systemctl enable docker | Iniciar el Daemon|
 ||
-|docker search ubuntu | buscar imagenes|
+|docker search ubuntu | Buscar imagenes|
 ||
-|sudo docker images | ver imagenes instaladas|
+|sudo docker images | Ver imagenes instaladas|
 ||
-|docker stop container-id | detener un contenedor|
+|docker stop container-id | Detener un contenedor|
 ||
-|docker start container-id | iniciar contenedor|
+|docker start container-id | Iniciar contenedor|
 ||
-|sudo docker login -u USUARIODOCKERHUB | iniciar sesión en la terminal con el usuario de docker hub|
+|sudo docker login -u USUARIODOCKERHUB | Iniciar sesión en la terminal con el usuario de docker hub|
 ||
-|sudo docker push docker-registry-username/docker-image-name | hacer push a la cuenta de DockerHub|
+|sudo docker push docker-registry-username/docker-image-name | Hacer push a la cuenta de DockerHub|
 || 
-|docker rmi Image Image | eliminar imagen|
+|docker rmi Image Image | Eliminar imagen|
 ||
-|docker rm ID ID | eliminar contenedores|
+|docker rm ID ID | Eliminar contenedores|
 ||
-|docker run --rm image_name | eliminar contenedores despues de cerrados|
+|docker run --rm image_name | Eliminar contenedores despues de cerrados|
 ||
 |sudo docker rm $(sudo docker ps -a -f status=exited -q) |  Eliminar todos los contenedores con estado “Exited (0)”||
 ||
-|sudo docker info | ver datos de docker|
+|sudo docker info | Ver datos de docker|
 ||
-|sudo docker images | ver imagenes descargadas| 
+|sudo docker images | Ver imagenes descargadas| 
 ||
-|sudo docker pull ubuntu:latest | descargar version de ubuntu mas actual|
+|sudo docker pull ubuntu:latest | Descargar version de ubuntu mas actual|
 ||
-|docker run [images name] | para correr imagenes|
+|docker run [images name] | Para correr imagenes|
 ||
-|-a docker ps docker ps -a | ver los contenedores que esten UP, incluso los que ya se terminaron de ejecutar |
+|-a docker ps docker ps -a | Ver los contenedores que esten UP, incluso los que ya se terminaron de ejecutar |
 ||
-|docker run -d (contenedor) | correr comandos de fondo|
+|docker run -d (contenedor) | Correr comandos de fondo|
 ||
-|run --name (nombre) (contenedor) | asignar nombre a contenedor docker|
+|run --name (nombre) (contenedor) | Asignar nombre a contenedor docker|
 ||
 |zenmap | Ver version de GUI de nmapv|
 ||
-|mv | se utiliza para mover archivos|
+|mv | Se utiliza para mover archivos|
 ||
-|rm |elimina archivos 
+|rm | Elimina archivos 
 ||
-|rm -R: | elimina archivos de forma recursiva|
+|rm -R: | Elimina archivos de forma recursiva|
 ||
-|cp | copia archivos| 
+|cp | Copia archivos| 
 ||
-|scp | transfiere archivos|
+|scp | Transfiere archivos|
 ||
-|curl | verifica conectividad a las url|
+|curl | Verifica conectividad a las url|
 ||
-|git clone | clona un repositorio|
+|git clone | Clona un repositorio|
 ||
-|wget | descarga archivos de la web|
+|wget | Descarga archivos de la web|
 ||
-head | muestra el principio del archivo txt|
+head | Muestra el principio del archivo txt|
 ||
-|tail | muestra el final de un archivo txt|
+|tail | Muestra el final de un archivo txt|
 ||
-|less | ver el contenido de un archivo, permite desplazar hacia adelante y atras|
+|less | Ver el contenido de un archivo, permite desplazar hacia adelante y atras|
 ||
-|more | ver el contenido de un archivo, solo permite desplazar hacia adelante|
+|more | Ver el contenido de un archivo, solo permite desplazar hacia adelante|
 ||
-|nmap | determina los tipos de servicios y hosts que se ejecutan en la red|
+|nmap | Determina los tipos de servicios y hosts que se ejecutan en la red|
 ||
-|nslookup | consulta de forma manual los servidores de nombres para resolver un nombre de host dado|
+|nslookup | Consulta de forma manual los servidores de nombres para resolver un nombre de host dado|
 ||
-|netstat |  muestran el estado de la red y estadísticas de protocolos como TCP, SCTP y UDP|
+|netstat |  Muestran el estado de la red y estadísticas de protocolos como TCP, SCTP y UDP|
 ||
-|shutdown now | apaga inmediatamente|
+|shutdown now | Apaga inmediatamente|
 ||
-|reboot | reinicia el sistema|
+|reboot | Reinicia el sistema|
 ||
-|tar | comprime y descomprime archivos|
+|tar | Comprime y descomprime archivos|
 ||
-|dd | copia y convertierte datos de archivos a bajo nivel|
+|dd | Copia y convertierte datos de archivos a bajo nivel|
 ||
-|ffmpeg | extrae la pista de audio de cualquier archivo de video y lo convierte en otro formato|
+|ffmpeg | Extrae la pista de audio de cualquier archivo de video y lo convierte en otro formato|
 ||
-|fdupes |escanea directorios en busca de ficheros duplicados, con opciones para listarlos y borrarlos|
+|fdupes | Escanea directorios en busca de ficheros duplicados, con opciones para listarlos y borrarlos|
 
 
 
